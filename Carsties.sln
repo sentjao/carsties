@@ -2,12 +2,27 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AFE8FFB5-2114-40E9-9F1B-FEBFA002303E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "AuctionService\AuctionService.csproj", "{FD5CB8E1-3E6B-4E85-B47C-AB3F33DE2376}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "src\AuctionService\AuctionService.csproj", "{FD5CB8E1-3E6B-4E85-B47C-AB3F33DE2376}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1975C322-A7EB-44C6-813A-0CC292CF18CE}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{5ED737F4-4D44-43BE-AAB7-FC9DD11B37BA}"
+	ProjectSection(SolutionItems) = preProject
+		specs\web-app.md = specs\web-app.md
+		specs\.DS_Store = specs\.DS_Store
+		specs\architecture.pdf = specs\architecture.pdf
+		specs\auction-service.md = specs\auction-service.md
+		specs\bid-service.md = specs\bid-service.md
+		specs\gateway-service.md = specs\gateway-service.md
+		specs\identity-service.md = specs\identity-service.md
+		specs\notification-service.md = specs\notification-service.md
+		specs\search-service.md = specs\search-service.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService", "src\SearchService\SearchService.csproj", "{AB165D45-4879-4622-AD75-DCF8EEA69703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +38,13 @@ Global
 		{FD5CB8E1-3E6B-4E85-B47C-AB3F33DE2376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD5CB8E1-3E6B-4E85-B47C-AB3F33DE2376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD5CB8E1-3E6B-4E85-B47C-AB3F33DE2376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB165D45-4879-4622-AD75-DCF8EEA69703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB165D45-4879-4622-AD75-DCF8EEA69703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB165D45-4879-4622-AD75-DCF8EEA69703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB165D45-4879-4622-AD75-DCF8EEA69703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FD5CB8E1-3E6B-4E85-B47C-AB3F33DE2376} = {AFE8FFB5-2114-40E9-9F1B-FEBFA002303E}
+		{AB165D45-4879-4622-AD75-DCF8EEA69703} = {AFE8FFB5-2114-40E9-9F1B-FEBFA002303E}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
 
 namespace AuctionService.Entities;
 
@@ -12,7 +11,6 @@ public class Auction
         
     }
 
-    [SetsRequiredMembers]
     public Auction(string id)
     {
         Id = id;
